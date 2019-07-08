@@ -31,10 +31,10 @@ export class LoginComponent implements OnInit {
       console.log("Correct credentials")
       this.invalidLogin=false
       // navigate helps in navigating to other components 
-      //this.route.navigate(['welcome',this.username])
+      this.route.navigate(['welcome',this.username])
 
       //to store the session of logged in user
-      //sessionStorage.setItem('authenticatedUser',this.username);
+      sessionStorage.setItem('authenticatedUser',this.username);
 
     }
     else
