@@ -1,13 +1,21 @@
-<table>
+
+
+
+<div class="alert alert-warning"   *ngIf='invalidLogin'>{{errorMessage}}</div>
+
+<table id="tb1">
   <tr>
     <td>Name:</td>
-    <td><input type="text"></td>
+    <td><input type="text" name="username" [(ngModel)]=username ></td>
   </tr>
   <tr>
     <td>Password:</td>
-    <td><input type="password"></td>
+    <td><input type="password" name="password" [(ngModel)]=password></td>
   </tr>
   <tr>
-    <button>Submit</button>
+    <button (click)=handleLogin() class="btn btn-success" >Submit</button>
+  </tr>
+  <tr>
+      
   </tr>
 </table>
