@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeContainerComponent } from './home-container/home-container.component';
 // Add a module - app-routing.module
 import { AppRoutingModule } from './app-routing.module';
+import { LogoutComponent } from './logout/logout.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
     MenuComponent,
     FooterComponent,
     HomeContainerComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,14 @@
       <li class="nav-link">Candidates</li>>
     </ul>
 
+
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+        <li><a *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+        <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+    
+      </ul>
   
   </nav>  
 
 </header>
+
