@@ -11,6 +11,7 @@ import { HomeContainerComponent } from './home-container/home-container.componen
 // Add a module - app-routing.module
 import { AppRoutingModule } from './app-routing.module';
 import { LogoutComponent } from './logout/logout.component';
+import { ErrorComponent } from './error/error.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { LogoutComponent } from './logout/logout.component';
     FooterComponent,
     HomeContainerComponent,
     WelcomeComponent,
-    LogoutComponent
+    LogoutComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
